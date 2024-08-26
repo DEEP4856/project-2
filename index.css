@@ -1,0 +1,60 @@
+.navbar-brand img {
+    height: 60px; /* Adjust the height as needed */
+}
+.nav-link{
+    color: aliceblue;
+}
+
+
+.stylish-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 20px;
+    background: linear-gradient(to right, #150333, #6761bb);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+    display: inline-block;
+}
+.stylish-title::before, .stylish-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background: #ffffff;
+    margin: 20px auto;
+}
+.stylish-title:hover {
+    transform: scale(1.1); /* Grows the title slightly on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Enhances the shadow */
+}
+
+
+.footer {
+    background-color: #05063a; /* Deep Blue */
+    color: white;
+    padding: 40px 0;
+}
+.footer h5 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.footer .social-icons a {
+    font-size: 24px;
+    margin-right: 15px;
+    color: white;
+}
+.footer .social-icons a:hover {
+    color: #ff7e5f; /* Hover color for icons */
+}
