@@ -22,7 +22,7 @@ html {
   
  .box_title{
         font-weight: bolder;
-    font-family: cursive;
+    
     font-size: 2rem;
     position: relative;
     display: inline-block;
@@ -48,6 +48,11 @@ html {
    right: -120px; /* Positioning the line on the right */
  }
 /* default css section ends */
+
+
+
+
+
 
 
 .navbar {
