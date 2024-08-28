@@ -7,6 +7,7 @@ window.addEventListener('scroll', function() {
     }
   });
 
+// crouselk logic
 
 
   const carouselElement = document.getElementById('carouselExampleFade');
@@ -14,6 +15,8 @@ window.addEventListener('scroll', function() {
     interval: 2000, // Speed up the carousel interval to 2 seconds
     ride: 'carousel'
   });
+
+//   box up logic
 
   window.addEventListener('scroll', function() {
     const boxes = document.querySelectorAll('.box');
@@ -29,6 +32,8 @@ window.addEventListener('scroll', function() {
       }
     });
   });
+
+
 
 
 //   counter logic
@@ -47,6 +52,8 @@ $(document).ready(function() {
       }
     }
 
+
+
     $(window).on('scroll', function() {
       let counterBoxOffset = $('#counterBox').offset().top;
       let windowHeight = $(window).height();
@@ -59,3 +66,59 @@ $(document).ready(function() {
       }
     });
   });
+
+
+  
+  document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', function () {
+        navLinks.forEach(nav => nav.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  });
+
+
+//   about-box
+document.addEventListener('DOMContentLoaded', function () {
+    const aboutSection = document.getElementById('about-us');
+  
+    function handleScroll() {
+      const sectionPos = aboutSection.getBoundingClientRect().top;
+      const screenPos = window.innerHeight;
+
+      if (sectionPos < screenPos - 100) {
+        aboutSection.classList.add('slide-in');
+      } else {
+        aboutSection.classList.remove('slide-in');
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Trigger the function in case the section is already in view on page load
+    handleScroll();
+});
+
+  
+  
+// gallery image box
+document.addEventListener('DOMContentLoaded', function () {
+    const animateSlideElements = document.querySelectorAll('.animate-slide');
+
+    function handleScrollAnimation() {
+        animateSlideElements.forEach(element => {
+            const elementPosition = element.getBoundingClientRect().top;
+            const viewPortHeight = window.innerHeight;
+
+            if (elementPosition < viewPortHeight - 100) {
+                element.classList.add('animate-active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', handleScrollAnimation);
+    handleScrollAnimation(); // Trigger animation on page load if elements are in viewport
+})

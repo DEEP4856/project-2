@@ -1,3 +1,9 @@
+/* some default css */
+html {
+    scroll-behavior: smooth;
+}
+
+
 .navbar-brand img {
     height: 60px; /* Adjust the height as needed */
 }
@@ -6,10 +12,42 @@
 }
 
 
+.nav-link.active {
+    color: #ff4500 !important; /* Default active color */
+  }
 
-
-
-
+.nav-link.clicked {
+    color: #ff4500 !important; /* Custom color when clicked */
+  }
+  
+ .box_title{
+        font-weight: bolder;
+    font-family: cursive;
+    font-size: 2rem;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0 20px; /* Space between the title and the lines */
+ } 
+ 
+ .box_title::before,
+ .box_title::after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   width: 100px; /* Length of the line */
+   height: 2px;
+   background-color: red; /* Color of the line */
+ }
+ 
+ .box_title::before {
+   left: -120px; /* Positioning the line on the left */
+ }
+ 
+ .box_title::after {
+   right: -120px; /* Positioning the line on the right */
+ }
+/* default css section ends */
 
 
 .navbar {
@@ -50,8 +88,8 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .navbar.scrolled .nav-link {
-    color: black !important;
+  .navbar.scrolled .nav-link  {
+     color: black !important; 
   }
 
   .navbar.scrolled .navbar-toggle-icon {
@@ -78,7 +116,7 @@
 
 
 
-
+/* crousel startys */
 
 
   .carousel-item {
@@ -189,6 +227,12 @@
     opacity: 1;
     transform: translateY(0);
   }
+  .why-us-box{
+    transition: transform 0.2s ease-in-out;
+  }
+  .why-us-box:hover{
+    transform: scale(1.1);
+  }
 
   .title-description {
     padding-right: 50px;
@@ -220,6 +264,7 @@
     font-weight: bold;
     margin: 0; /* Remove margins */
     width: 100%; /* Full width */
+    background-color: #fff;
   }
 
   .counter-box::before {
@@ -253,6 +298,80 @@
     transition: opacity 0.5s ease-in-out;
   }
    /* content section */
+
+
+
+
+
+/* about section starts */
+   #about-us {
+    background-color: #ffffff; /* Background color for the section */
+  }
+  
+  .pop-box {
+    width: 80%; /* Adjust the size of the image box */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .pop-box:hover {
+    transform: scale(1.1); /* Pop effect on hover */
+  }
+  
+  .about-description h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-description p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+
+  #about-us {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Initial position */
+    transition: all 0.4s ease-in-out; /* Animation */
+  }
+  
+  #about-us.slide-in {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Moves to the final position */
+  }
+ 
+  
+  /* about section ends */
+  
+
+
+   /* gallery section starts*/
+
+   .animate-slide {
+    border: none;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Image styling */
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Class to trigger the slide-up animation */
+  .animate-active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+   /* gallery section ends */
+
+
+
+
 
 
   /* footer section */
