@@ -1,6 +1,7 @@
 /* some default css */
 html {
     scroll-behavior: smooth;
+    
 }
 
 
@@ -347,6 +348,46 @@ html {
   
   /* about section ends */
   
+
+
+
+   /* service section starts */
+  /* General styling for the Services section */
+#services .services-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Service Box Styling */
+  .service-box {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.6s ease, box-shadow 0.6s ease, opacity 0.6s ease;
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  
+  /* Slide-in effect when the box is in view */
+  .service-box.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Hover Effect */
+  .service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+   /* service section end */
+
+
+
+
+
+
+
 
 
    /* gallery section starts*/

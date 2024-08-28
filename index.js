@@ -16,6 +16,8 @@ window.addEventListener('scroll', function() {
     ride: 'carousel'
   });
 
+
+
 //   box up logic
 
   window.addEventListener('scroll', function() {
@@ -33,6 +35,9 @@ window.addEventListener('scroll', function() {
     });
   });
 
+
+
+ 
 
 
 
@@ -103,6 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
   
+
   
 // gallery image box
 document.addEventListener('DOMContentLoaded', function () {
@@ -122,3 +128,28 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', handleScrollAnimation);
     handleScrollAnimation(); // Trigger animation on page load if elements are in viewport
 })
+
+// service box
+document.addEventListener('DOMContentLoaded', function () {
+    const serviceBoxes = document.querySelectorAll('.service-box');
+  
+    function handleScroll() {
+      serviceBoxes.forEach(box => {
+        const boxPosition = box.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight;
+  
+        if (boxPosition < screenPosition - 50) {
+          box.classList.add('in-view');
+        } else {
+          box.classList.remove('in-view'); // This removes the class when scrolling up
+        }
+      });
+    }
+  
+    window.addEventListener('scroll', handleScroll);
+  
+    // Trigger the scroll handler in case the boxes are already in view on page load
+    handleScroll();
+  });
+  
+  
