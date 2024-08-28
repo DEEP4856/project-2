@@ -1,8 +1,18 @@
 /* some default css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
 html {
     scroll-behavior: smooth;
     
 }
+body {
+    overflow-x: hidden;
+  }
 
 
 .navbar-brand img {
@@ -117,16 +127,23 @@ html {
   }
 
 
+.container{
 
-
+    max-width: 100%;
+      overflow: hidden;
+}
 
 
 
 /* crousel startys */
+.carousel-item {
+    max-width: 100%;
+}
 
 
   .carousel-item {
     height: 93vh;
+    
     background-size: cover;
     background-position: center;
     position: relative;
@@ -179,12 +196,16 @@ html {
   .section {
     padding: 100px 0;
   }
+  .whyus_sec-box{
+    margin-top: 85px;
+  }
 
   .box {
     background-color: #ecececc7;
     border: 1px solid #fcf7ec;
     padding: 20px;
     margin: 20px 0;
+    
     height: 20em;
     opacity: 0;
     transform: translateY(50px);
@@ -312,10 +333,11 @@ html {
 /* about section starts */
    #about-us {
     background-color: #ffffff; /* Background color for the section */
+    text-align: center;
   }
   
   .pop-box {
-    width: 80%; /* Adjust the size of the image box */
+    /* width: 80%; Adjust the size of the image box */
     transition: transform 0.3s ease-in-out;
   }
   
