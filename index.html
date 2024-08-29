@@ -192,7 +192,7 @@
 
 
  <!-- Service portion -->
- <section id="service" class="py-5">
+ <section id="service" class="">
     <div class="container ">
       <!-- Services Caption -->
       <div class="row">
@@ -256,7 +256,7 @@
 
 
 <!-- gallery portion starts -->
-<section id="gallery" class="py-5">
+<section id="gallery" class="">
     <div class="container">
       <!-- Gallery Title Caption -->
       <div class="row">
@@ -411,22 +411,23 @@
       <!-- Right Side: Contact Form -->
       <div class="col-md-6">
         <div class="contact-form">
-          <form>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="5b05aaa8-dc4a-4a6c-ac1b-29d82530de1d">
             <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Your Name">
+                <label  class="form-label">Name</label>
+                <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required>
             </div>
             <div class="mb-3">
-              <label for="phone" class="form-label">phone Number</label>
-              <input type="text" class="form-control" id="phone" placeholder="Your Name">
+              
+                <label class="form-label">Phone</label>
+                <input  name="phone" class="form-control" id="phone" placeholder="Your Phone number" required>
             </div>
             <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Your Email">
-            </div>
+                <label  class="form-label">Email</label>
+                <input name="email" type="email" class="form-control" id="email" placeholder="Your Email" required>
             <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                <label  class="form-label">Message</label>
+                <textarea name="message" class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
             </div>
             <button type="submit" class="btn contact-button">Send Message</button>
           </form>
@@ -438,7 +439,7 @@
 
 
  <!-- Footer Section -->
- <footer class="footer" style="text-align: center;">
+ <footer class="footer" style="text-align: center; margin-top: 30px;">
     <div class="container">
       <div class="row">
         <!-- Logo and Description -->
@@ -457,12 +458,13 @@
         <div class="col-md-3">
           <h5>Useful Links</h5>
           <ul class="list-unstyled" >
-            <li><a href="#" class="text-dark footer-links">Home</a></li>
-            <li><a href="#" class="text-dark  footer-links">About Us</a></li>
-            <li><a href="#" class="text-dark  footer-links">Services</a></li>
-            <li><a href="#" class="text-dark  footer-links">Gallery</a></li>
-            <li><a href="#" class="text-dark  footer-links">Team</a></li>
-            <li><a href="#" class="text-dark  footer-links">Contact Us</a></li>
+            <li><a href="#index" class="text-dark footer-links">Home</a></li>
+            <li><a href="#about-us" class="text-dark  footer-links">About Us</a></li>
+            <li><a href="#achievements" class="text-dark  footer-links">Achievements</a></li>
+            <li><a href="#service" class="text-dark  footer-links">Services</a></li>
+            <li><a href="#gallery" class="text-dark  footer-links">Gallery</a></li>
+            <li><a href="#team" class="text-dark  footer-links">Team</a></li>
+            <li><a href="#contact" class="text-dark  footer-links">Contact Us</a></li>
           </ul>
         </div>
 
