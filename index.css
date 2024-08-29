@@ -474,7 +474,7 @@ body {
   .form-control {
     border-radius: 0;
   }
-  .contact-title {
+  .contact-title { 
     text-align: center;
     margin-bottom: 40px;
   }
