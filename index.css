@@ -524,3 +524,27 @@ body {
   }
   
   /* footer section */
+
+  /* scroll to top */
+  #scrollToTopBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+    background-color: #ffae00;
+    border: none;
+    border-radius: 8%;
+    padding: 10px;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+#scrollToTopBtn i {
+    font-size: 24px;
+    color: white;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #c5492adc;
+}
+  /* scroll to top */
