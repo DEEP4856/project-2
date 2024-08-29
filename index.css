@@ -451,10 +451,42 @@ body {
    /* gallery section ends */
 
 
+/* team section */
+.team-section {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+    text-align: center;
+}
+.team-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+.team-member {
+    margin-bottom: 30px;
+}
+.team-member img {
+    width: 158px;
+    height: 198px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.team-member h5 {
+    margin-top: 15px;
+    font-size: 1.25rem;
+}
+.team-member p {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #555;
+}
+/* team section */
+
+
 
 /* contact page  */
 .contact-page {
     padding: 0px 0;
+    margin-top: 32px;
   }
   .small-box {
     background-color: #f0f0f0;
